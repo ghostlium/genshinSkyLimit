@@ -13,32 +13,32 @@
     <div class="container">
       <script src="js/script.js"></script>
       <header>Genshin's Sky Limit</header>
-      <form onsubmit="window.jsonInput()">
+      <form onsubmit="event.preventDefault(); window.jsonInput()">
         <label for="jsonInput">JSON File:</label>
         <input type="text" id="jsonInput" name="jsonInput" value='{"name":"Untitle","author":"Unknown","transcribedBy":"Unknown","isComposed":true,"bpm":240,"bitsPerPage":16,"pitchLevel":0,"isEncrypted":false,"songNotes":[{"time":0,"key":"1Key0"},{"time":250,"key":"1Key1"},{"time":500,"key":"1Key2"},{"time":750,"key":"1Key3"},{"time":1000,"key":"1Key4"},{"time":1250,"key":"1Key5"},{"time":1500,"key":"1Key6"},{"time":1750,"key":"1Key7"},{"time":2000,"key":"1Key8"},{"time":2250,"key":"1Key9"},{"time":2500,"key":"1Key10"},{"time":2750,"key":"1Key11"},{"time":3000,"key":"1Key12"},{"time":3250,"key":"1Key13"},{"time":3500,"key":"1Key14"}]}'>
         <input type="submit" value="Submit">
       </form>
         
-      <form onsubmit="window.skyInput()">
+      <form onsubmit="event.preventDefault(); window.skyInput()">
         <label for="skyInput">Sky A/B/C Notation:</label>
         <input type="text" id="skyInput" name="skyInput" value="A1 A2 A3 A4 A5 B1 B2 B3 B4 B5 C1 C2 C3 C4 C5">
         <input type="submit" value="Submit">
       </form>
 
-      <form onsubmit="window.abcTodoremi()">
+      <form onsubmit="event.preventDefault(); window.abcTodoremi()">
         <label for="abcTodoremi">Genshin A/B/C Notation to DoReMi:</label>
         <input type="text" id="abcTodoremi" name="abcTodoremi" value="A1 A2 A3 A4 A5 A6 A7 B1 B2 B3 B4 B5 B6 B7 C1">
         <input type="submit" value="Submit">
       </form>  
 
-      <form onsubmit="window.abcToKeyboard()">
+      <form onsubmit="event.preventDefault(); window.abcToKeyboard()">
         <label for="abcToKeyboard">Genshin A/B/C Notation to Keyboard Notation:</label>
         <input type="text" id="abcToKeyboard" name="abcToKeyboard" value="A1 A2 A3 A4 A5 A6 A7 B1 B2 B3 B4 B5 B6 B7 C1">
         <input type="submit" value="Submit">
       </form>  
 
-      <p id="notation" class="out"/>
-      <p id="timing" class="out"/>
+      <p id="notation" class="out">
+      <p id="timing" class="out">
 
       <hr>
       <p>

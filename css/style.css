@@ -1,0 +1,43 @@
+html {
+  font-size: 100%;
+}
+
+form {
+  margin-bottom: 1.875rem;
+}
+
+label {
+  display: block;
+}
+
+input {
+  display: block;
+}
+
+.out {
+  font-family: Consolas, monospace;
+}
+
+p {
+  max-width: 37.5rem;
+  overflow-wrap: break-word;
+}
+header {
+  text-align: center;
+  font-size: 30px;
+  margin: 3rem;
+}
+
+.container {
+  width: 50rem;
+  margin: 6.25rem auto;
+  background-color: rgba(101, 255, 247, 0.75);
+  border-radius: 1.25rem;
+}
+
+body {
+  background: url('../images/The-Scenic-Route-850x478.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}

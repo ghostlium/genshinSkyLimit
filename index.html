@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Genshin's Sky Limit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    </link>
+    <link rel="stylesheet" href="style.css">
+    </link>
+  </head>
+  
+  <body>
+    <h1>Genshin's Sky Limit</h1>
+    <form onsubmit="window.jsonInput()">
+      <label for="jsonInput">JSON File:</label>
+      <input type="text" id="jsonInput" name="jsonInput" value='{"name":"Untitle","author":"Unknown","transcribedBy":"Unknown","isComposed":true,"bpm":240,"bitsPerPage":16,"pitchLevel":0,"isEncrypted":false,"songNotes":[{"time":0,"key":"1Key0"},{"time":250,"key":"1Key1"},{"time":500,"key":"1Key2"},{"time":750,"key":"1Key3"},{"time":1000,"key":"1Key4"},{"time":1250,"key":"1Key5"},{"time":1500,"key":"1Key6"},{"time":1750,"key":"1Key7"},{"time":2000,"key":"1Key8"},{"time":2250,"key":"1Key9"},{"time":2500,"key":"1Key10"},{"time":2750,"key":"1Key11"},{"time":3000,"key":"1Key12"},{"time":3250,"key":"1Key13"},{"time":3500,"key":"1Key14"}]}'>
+      <input type="submit" value="Submit">
+    </form>
+      
+    <form onsubmit="window.skyInput()">
+      <label for="skyInput">Sky A/B/C Notation:</label>
+      <input type="text" id="skyInput" name="skyInput" value="A1 A2 A3 A4 A5 B1 B2 B3 B4 B5 C1 C2 C3 C4 C5">
+      <input type="submit" value="Submit">
+    </form>
+
+    <form onsubmit="window.abcTodoremi()">
+      <label for="abcTodoremi">Genshin A/B/C Notation to DoReMi:</label>
+      <input type="text" id="abcTodoremi" name="abcTodoremi" value="A1 A2 A3 A4 A5 A6 A7 B1 B2 B3 B4 B5 B6 B7 C1">
+      <input type="submit" value="Submit">
+    </form>  
+
+    <form onsubmit="window.abcToKeyboard()">
+      <label for="abcToKeyboard">Genshin A/B/C Notation to Keyboard Notation:</label>
+      <input type="text" id="abcToKeyboard" name="abcToKeyboard" value="A1 A2 A3 A4 A5 A6 A7 B1 B2 B3 B4 B5 B6 B7 C1">
+      <input type="submit" value="Submit">
+    </form>  
+
+    <p id="notation" class="out"/>
+    <p id="timing" class="out"/>
+
+    <hr/>
+    <p>
+      This program aims to convert JSON files created by <a href="https://skystudio.app/" target="_blank">Sky Studio</a> as well as music sheets in Sky's <a href="https://cdn.discordapp.com/attachments/585330441905635341/680496764817637439/image0.jpg" target="_blank">ABC1-5</a> notation into a proposed <a href="https://media.discordapp.net/attachments/824684900439031821/824732455247806514/unknown.png?width=554&height=173" target="_blank">ABC1-7</a> notation for Genshin Impact to use for <a href="https://genshin.honeyhunterworld.com/db/item/breezy_lyre/" target="_blank">Windsong Lyre.</a> Gameplay for the new gadget can be found <a href="https://youtu.be/-h5ukDSnCgE?t=26" target="_blank">here</a>.
+    </p>
+    <p>
+      If the program does not work, please make sure that there are no brackets [] at the start and end of the text!
+    </p>
+    <p>
+      Made with smiles by
+      <a href="https://github.com/ghostlium" target="_blank">@ghostlium</a>
+      and
+      <a href="https://github.com/Arc-blroth" target="_blank">@Arc-blroth</a>
+    </p>
+    <p>
+      Join our <a href="https://discord.gg/dVThmGQ4mq" target="_blank">community</a>!
+    </p>
+
+    <script src="script.js"></script>
+  </body>
+</html>
